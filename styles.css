@@ -1,1 +1,77 @@
 /*  your css code here. If applicable */
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      h1 {
+        font-family: "Permanent Marker", cursive;
+        font-size: 36px;
+        margin: 10px 0 20px;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 14px;
+        font-size: 18px;
+      }
+
+      .row input {
+        width: 260px;
+        padding: 6px 10px;
+        font-size: 20px;
+        border: 2px solid black;
+      }
+
+      #submit {
+        width: 312px;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 22px;
+        background: white;
+        border: 2px solid black;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      #game {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .message {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+
+      .board {
+        display: grid;
+        grid-template-columns: repeat(3, 125px);
+        grid-template-rows: repeat(3, 125px);
+      }
+
+      .cell {
+        background: pink;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Permanent Marker", cursive;
+        font-size: 40px;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .cell.win {
+        background: purple;
+      }
